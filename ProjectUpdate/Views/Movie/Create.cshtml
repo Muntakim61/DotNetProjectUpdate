@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Create Movie";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form method="post" asp-action="Create" class="flex-column gap-3">
+    <div class="form-group">
+        <label for="Title" class=" fw-bold">Title</label>
+        <input type="text" class="form-control" id="Title" name="Title" required />
+    </div>
+    <div class="form-group">
+        <label for="Genre" class=" fw-bold">Genre</label>
+        <input type="text" class="form-control" id="Genre" name="Genre" required />
+    </div>
+    <div class="form-group">
+        <label for="Producer" class=" fw-bold">Producer</label>
+        <input type="text" class="form-control" id="Producer" name="Producer" required />
+    </div>
+    <div class="form-group">
+        <label for="Actor" class=" fw-bold">Actor</label>
+        <input type="text" class="form-control" id="Actor" name="Actor" required />
+    </div>
+    <div class="form-group">
+        <label for="Description" class=" fw-bold">Description</label>
+        <textarea class="form-control" id="Description" name="Description"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="Price" class=" fw-bold">Price</label>
+        <input type="number" class="form-control" id="Price" name="Price" required />
+    </div>
+    <div class="form-group">
+        <label for="EndTime" class=" fw-bold">End Time</label>
+        <input type="datetime-local" class="form-control" id="EndTime" name="EndTime" required />
+    </div>
+    <div class="form-group">
+        <label for="ImageURL" class=" fw-bold">Image URL</label>
+        <input type="text" class="form-control" id="ImageURL" name="ImageURL" />
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-5">Create Movie</button>
+</form>
