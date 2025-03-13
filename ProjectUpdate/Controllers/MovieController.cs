@@ -52,5 +52,10 @@ namespace ProjectUpdate.Controllers
             }
             return View(movie);
         }
+
+        //public IActionResult Create()
+        //{
+        //    return View();
+        //}
     }
 }
